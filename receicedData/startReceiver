@@ -1,0 +1,16 @@
+# This program will start the receiver side of the Rasp Pi to receive the data from Arduino over serial communication .... 
+
+#!/bin/bash
+	rm aftrArduino.txt
+	ls /dev/tty*>>aftrArduino.txt
+	differance=`diff bfrArduino.txt aftrArduino.txt | awk '{print $2}'`
+	#if [ -z "${differance}"  ]; then
+	if [[ "$differance" =~ "/dev/tty" ]]; then
+		echo "Executing the receiveData.py... "
+		python3 ./receiveData.py  $differance
+	else
+		echo "differance is unset or set to the empty string -- "
+		echo $differance
+	fi
+	
+	
