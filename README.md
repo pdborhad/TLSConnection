@@ -13,9 +13,9 @@ the setup will create the public and private keys for server and client. These k
 Step-1: start server
 ./startServer
 
-This file internally calls a Python script 'server.py' and listens connections on port 8000.
+This file internally calls a Python script 'server.py' and listens connections on port 8000. If it listens any connection on the port, it accepts the message and saves into 'receivedMessage.txt' file.
 
 Step-3: start client
 ./startClient
 
-This file starts client machine. It calls 'client.py' and create secure connection to server. Once the cilent connects to the server, it send a data in 
+This file starts client machine. It calls 'client.py' and create secure connection to server. Once the cilent connects to the server, it send a data to the server. The data to be sent is saved in './receicedData/receivedMessage.txt'
