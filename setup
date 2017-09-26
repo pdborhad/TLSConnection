@@ -1,0 +1,8 @@
+#!/bin/bash
+
+location=/root/IoT/SurgeIrr
+# Generate RSA Keys
+cd $location/ ServerKeys
+python $location/RSAKeyGeneration/makeRSAKeyPair.py Server 4096
+cd $location/ClientKeys
+python $location/RSAKeyGeneration/makeRSAKeyPair.py Client 4096
