@@ -4,6 +4,8 @@
 #/*
 This project is built to send microcontroller data to remote desktop over the internet. 
 Microcontrtoller sends the data to RasPi over serial communication. RasPi create a SSL connection to remote device and send the data to remote desktop. This project is run on a single machine which works as both the server and the client. The microcontroler used for sending data to RasPi is ArduinoDue board.
+
+
 #*/
 #How to run the project.
 Step-1: Run following file 
