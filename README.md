@@ -31,4 +31,4 @@ Step-3: start client
 
 This file starts client machine. It calls 'client.py' and create secure connection to server. Once the cilent connects to the server, it send a data to the server. The data to be sent is saved in './receicedData/receivedMessage.txt'
 
-# For RasPi, the serial configuration is different. So make sure you have made correct configuration and accordingly change the GPIO name in startReceiver script
+For RasPi, the serial configuration is different. So make sure you have made correct configuration and accordingly change the GPIO name in startReceiver script
